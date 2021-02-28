@@ -8,3 +8,22 @@
 //   <span id="value">0</span>
 //   <button type="button" data-action="increment">+1</button>
 // </div>
+
+let counterValue = 0;
+const couterRef = document.querySelector("#value");
+
+const increment = () => { 
+    counterValue += 1;
+    return couterRef.textContent = counterValue;
+}
+const decrement = () => {
+    counterValue -= 1;
+    return couterRef.textContent = counterValue;
+}
+const couterButtons = document.querySelectorAll("button");
+
+const decrementButton = couterButtons[0];
+const incrementButton = couterButtons[1];
+
+incrementButton.addEventListener('click', increment);
+decrementButton.addEventListener('click', decrement);
