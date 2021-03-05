@@ -1,4 +1,29 @@
+.text {
+font-family: 'RocknRoll One', sans-serif;
+ font-weight: 900
+ ;
+  font-size: 30px;
+color: #4caf50;
+}
+
+/*1-task*/
+.list-position { 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  list-style: none;
+  padding: 0;
+} 
+/*2-task*/
+
+
+
 /* 3-task */
+#gallery {
+display: flex;
+
+}
 ul {
     display: flex;
 margin: 0;
